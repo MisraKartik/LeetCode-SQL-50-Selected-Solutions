@@ -29,3 +29,4 @@ JOIN (
     HAVING COUNT(*) >= 5
 ) m ON e.id = m.managerId;
 ```
+The inner subquery find the managerid having atleast 5 counts. It then joins with table 
