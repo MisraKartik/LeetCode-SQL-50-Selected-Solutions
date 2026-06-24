@@ -1,0 +1,13 @@
+
+```sql
+can you make my leetcode query more efficient : ITH first_year AS
+(
+    SELECT *,
+    RANK() OVER(PARTITION BY product_id ORDER BY year) AS rn
+    FROM sales
+)
+SELECT product_id, year AS first_year, quantity, price
+FROM first_year
+WHERE rn = 1
+```
+
