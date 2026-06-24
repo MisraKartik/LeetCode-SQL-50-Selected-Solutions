@@ -1,6 +1,6 @@
 
 ```sql
-can you make my leetcode query more efficient : ITH first_year AS
+WITH first_year AS
 (
     SELECT *,
     RANK() OVER(PARTITION BY product_id ORDER BY year) AS rn
