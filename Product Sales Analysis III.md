@@ -1,5 +1,5 @@
 
-``` sql
+```sql
 WITH first_year AS
 (
     SELECT *,
